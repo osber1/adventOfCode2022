@@ -1,23 +1,23 @@
 import util.loadInput
 
-private val list: MutableList<Int> = mutableListOf()
-var sum = 0
+private val caloriesSums: MutableList<Int> = mutableListOf()
+private var caloriesSum = 0
 
 fun main() {
     loadInput(1)
         .map { parseToInt(it) }
         .forEach { addSumToList(it) }
 
-    println(list.max())
-    println(list.sortedDescending().take(3).sum())
+    println(caloriesSums.max())
+    println(caloriesSums.sorted().takeLast(3).sum())
 }
 
 private fun addSumToList(it: Int) {
     if (it == 0) {
-        list.add(sum)
-        sum = 0
+        caloriesSums.add(caloriesSum)
+        caloriesSum = 0
     } else
-        sum += it
+        caloriesSum += it
 }
 
 private fun parseToInt(it: String?): Int {
