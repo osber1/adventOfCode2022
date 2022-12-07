@@ -10,23 +10,19 @@ fun main() {
 class Day6 {
 
     fun first(input: List<String>): Int {
-        return findUniqueCode(input, 4)
+        return findUniqueCodeIndex(input, 4)
 
     }
 
     fun second(input: List<String>): Int {
-        return findUniqueCode(input, 14)
+        return findUniqueCodeIndex(input, 14)
     }
 
-    private fun findUniqueCode(input: List<String>, markerSize: Int): Int {
-        val dataStream = input[0]
-        val uniqueCode = dataStream
-            .toCharArray().toList()
+    private fun findUniqueCodeIndex(input: List<String>, markerSize: Int): Int {
+        return input.first()
             .windowed(markerSize)
-            .first { it.toSet().size == markerSize }
-            .joinToString("")
-
-        return dataStream.indexOf(uniqueCode) + markerSize
+            .indexOfFirst { it.toSet().size == markerSize }
+            .plus(markerSize)
     }
 
 }
