@@ -22,8 +22,6 @@ X
 G
 src/main/kotlin/Day7.kt,6/f/6fd6291c5ba2b7a5ddfcc2283863a15a71b172e2
 G
-src/main/kotlin/Day8.kt,b/f/bf317fb5e4049d9c6fec36df3c7f03d3a502097f
-G
 src/main/kotlin/Day6.kt,f/a/fa3941fc185784f6fd54bfcfcc1483a30ac150ce
 H
 src/main/kotlin/Day13.kt,6/d/6dff152ee75dd394877f069ac3b06ecafc7dd3ea
@@ -37,8 +35,6 @@ H
 src/main/kotlin/Day17.kt,e/2/e204da2cac4ffc39e0e5a27782b3928fcc6afbbd
 H
 src/main/kotlin/Day18.kt,8/e/8e6367ad47c75ecfb6c99f7fbace905a9159d1e6
-H
-src/main/kotlin/Day12.kt,d/1/d1e58358fa6e9e5fbd90ddf02493863bc02a2b9d
 H
 src/main/kotlin/Day19.kt,f/9/f98cfabd4aa0d16ebf75b74ffba56849ae0b6ea5
 H
